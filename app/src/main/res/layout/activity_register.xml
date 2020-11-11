@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:text="Register"
+            android:textSize="36dp"
+            android:fontFamily="@font/rregular"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:hint="User name"
+            android:textColorHint="#2CA7E0"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_width="250dp"
+            android:background="@drawable/edit"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:hint="Email"
+            android:textColorHint="#2CA7E0"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_width="250dp"
+            android:background="@drawable/edit"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:hint="Password"
+            android:textColorHint="#2CA7E0"
+            android:inputType="textPassword"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_width="250dp"
+            android:drawableRight="@drawable/ic_visibility_off_black_24dp"
+            android:background="@drawable/edit"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="45dp">
+
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/btnRegister"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_btn_login_layout"
+                android:text="Register"
+                android:textColor="#fff" />
+
+            <TextView
+                android:textColor="#2CA7E0"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="Already have an account?"
+                android:id="@+id/had_account_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

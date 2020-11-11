@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/logout_id"
+        android:enabled="true"
+        android:icon="@drawable/ic_chat_black_24dp"
+        android:title="Logout"/>
+    <item
+        android:id="@+id/update_id"
+        android:enabled="true"
+        android:icon="@drawable/ic_person"
+        android:title="Update"/>
+
+</menu>

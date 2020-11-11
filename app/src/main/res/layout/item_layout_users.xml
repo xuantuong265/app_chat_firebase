@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" >
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/img_avt"
+               android:src="@mipmap/ic_launcher"
+               android:layout_width="50dp"
+               android:layout_height="50dp" >
+
+           </de.hdodenhof.circleimageview.CircleImageView>
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/img_avt_online"
+               android:layout_toRightOf="@id/img_avt"
+               android:layout_below="@id/img_avt"
+               android:layout_marginTop="-15dp"
+               android:layout_marginLeft="-10dp"
+               android:src="@mipmap/ic_launcher"
+               app:civ_border_width="10dp"
+               app:civ_border_color="#05df29"
+               android:layout_width="15dp"
+               android:visibility="gone"
+               android:layout_height="15dp" />
+
+       </RelativeLayout>
+
+        <TextView
+            android:text="Xuan Tuong"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/username_id"
+            android:textSize="17dp"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:layout_height="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:background="@drawable/shadow_bt"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avt_id"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="Chat"
+            android:fontFamily="sans-serif-light"
+            android:textSize="25dp"
+            android:textColor="#1c1e21"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avt_online"
+        android:layout_centerHorizontal="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_below="@id/img_avt_online"
+        android:layout_marginTop="10dp"
+        android:id="@+id/user_online_id"
+        android:text="Xuân"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_online"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/img_avt_online"
+        android:layout_marginTop="-11dp"
+        android:layout_marginLeft="-6dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_toRightOf="@id/img_avt_online"
+        app:civ_border_color="#05df29"
+        app:civ_border_width="10dp" />
+
+</RelativeLayout>
